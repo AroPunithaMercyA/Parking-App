@@ -9,7 +9,7 @@ export default function SelectParking({ parkingOptions, selected, setSelected, s
             key={option.id}
             onClick={() => setSelected(option)}
             className={`border p-5 rounded-lg shadow cursor-pointer transition 
-            ${selected?.id === option.id ? "border-blue-600 shadow-lg" : "border-gray-300"}`}
+            ${selected?.id === option.id ? "border-green-600 shadow-lg bg-green-50" : "border-gray-300"}`}
           >
             <h3 className="text-xl font-semibold">{option.title}</h3>
             <ul className="mt-2 text-gray-600 space-y-1">

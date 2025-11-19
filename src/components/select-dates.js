@@ -83,10 +83,10 @@ export default function SelectDates({
         onClick={() => {
             if (!fromDate || !fromTime || !toDate || !toTime) {
             setError("Please select both start and end date/time.");
+            scrollToTop();
             return;
             }
             setError("");
-            scrollToTop();
             onNext();
         }}
         className="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition"

@@ -1,5 +1,6 @@
 import { parkingOptionsData } from "../constants";
-import { FaCarSide, FaHandshake } from "react-icons/fa";
+import { FaClock, FaCarSide, FaHandshake } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function ParkingPackages() {
   return (
@@ -8,7 +9,7 @@ export default function ParkingPackages() {
         Our Parking Packages
       </h1>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 mb-3">
         {parkingOptionsData.map((option) => (
           <div
             key={option.id}
@@ -40,6 +41,12 @@ export default function ParkingPackages() {
           </div>
         ))}
       </div>
+
+      <Link to="/booking">
+        <button className="mt-6 bg-blue-600 text-white px-8 py-3 rounded-lg shadow hover:bg-blue-700 flex items-center gap-2 mx-auto">
+          <FaClock /> Book Now
+        </button>
+      </Link>
     </div>
   );
 }
