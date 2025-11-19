@@ -1,6 +1,6 @@
 export default function SelectParking({ parkingOptions, selected, setSelected, scrollToTop, setError, onNext, onBack }) {
   return (
-    <div>
+    <div className="max-w-4xl">
       <h2 className="text-2xl font-bold mb-4">Choose Parking Option</h2>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -15,7 +15,6 @@ export default function SelectParking({ parkingOptions, selected, setSelected, s
             <ul className="mt-2 text-gray-600 space-y-1">
               <li>{option.desc1}</li>
               <li>{option.desc2}</li>
-              <li>{option.desc3}</li>
             </ul>
             <p className="text-lg font-bold mt-3">{option.price}</p>
           </div>

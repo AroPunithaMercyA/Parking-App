@@ -5,14 +5,10 @@ export default function SelectDates({
   toDate,
   fromTime,
   toTime,
-  fromPeriod,
-  toPeriod,
   setFromDate,
   setToDate,
   setFromTime,
   setToTime,
-  setFromPeriod,
-  setToPeriod,
   scrollToTop,
   setError,
   onNext
@@ -41,15 +37,6 @@ export default function SelectDates({
           value={fromTime}
           onChange={(e) => setFromTime(e.target.value)}
         />
-
-        <select
-          className="border p-3 rounded w-1/4"
-          value={fromPeriod}
-          onChange={(e) => setFromPeriod(e.target.value)}
-        >
-          <option>AM</option>
-          <option>PM</option>
-        </select>
       </div>
 
       {/* TO DATE & TIME */}
@@ -68,15 +55,6 @@ export default function SelectDates({
           value={toTime}
           onChange={(e) => setToTime(e.target.value)}
         />
-
-        <select
-          className="border p-3 rounded w-1/4"
-          value={toPeriod}
-          onChange={(e) => setToPeriod(e.target.value)}
-        >
-          <option>AM</option>
-          <option>PM</option>
-        </select>
       </div>
 
       <button

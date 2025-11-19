@@ -31,7 +31,6 @@ export default function ParkingPackages() {
             <ul className="mt-3 text-gray-600 space-y-1 text-center">
               <li>{option.desc1}</li>
               <li>{option.desc2}</li>
-              <li>{option.desc3}</li>
             </ul>
 
             {/* Price */}

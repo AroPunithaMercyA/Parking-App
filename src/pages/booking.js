@@ -16,10 +16,6 @@ export default function Booking() {
   const [fromTime, setFromTime] = useState("");
   const [toTime, setToTime] = useState("");
 
-  // AM / PM (IMPORTANT!)
-  const [fromPeriod, setFromPeriod] = useState("AM");
-  const [toPeriod, setToPeriod] = useState("AM");
-
   // PARKING OPTION
   const [selected, setSelected] = useState(null);
 
@@ -41,8 +37,8 @@ export default function Booking() {
   };
 
   // Combine into full datetime
-  const fullFrom = `${fromDate} ${fromTime} ${fromPeriod}`;
-  const fullTo = `${toDate} ${toTime} ${toPeriod}`;
+  const fullFrom = `${fromDate} ${fromTime}`;
+  const fullTo = `${toDate} ${toTime}`;
 
   return (
     <div className="mx-auto px-4 py-8">
@@ -63,14 +59,10 @@ export default function Booking() {
           toDate={toDate}
           fromTime={fromTime}
           toTime={toTime}
-          fromPeriod={fromPeriod}
-          toPeriod={toPeriod}
           setFromDate={setFromDate}
           setToDate={setToDate}
           setFromTime={setFromTime}
           setToTime={setToTime}
-          setFromPeriod={setFromPeriod}
-          setToPeriod={setToPeriod}
           scrollToTop={scrollToTop}
           setError={setError}
           onNext={() => setStep(2)}
