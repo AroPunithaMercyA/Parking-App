@@ -1,6 +1,6 @@
 export default function SelectParking({ parkingOptions, selected, setSelected, scrollToTop, setError, onNext, onBack }) {
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold mb-4">Choose Parking Option</h2>
 
       <div className="grid md:grid-cols-2 gap-6">
