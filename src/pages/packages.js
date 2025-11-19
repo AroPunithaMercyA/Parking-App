@@ -1,0 +1,45 @@
+import { parkingOptionsData } from "../constants";
+import { FaCarSide, FaHandshake } from "react-icons/fa";
+
+export default function ParkingPackages() {
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold text-center mb-8">
+        Our Parking Packages
+      </h1>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {parkingOptionsData.map((option) => (
+          <div
+            key={option.id}
+            className="border p-6 rounded-lg shadow bg-white hover:shadow-xl hover:scale-105 transition-transform duration-300"
+          >
+            {/* Icon */}
+            <div className="flex justify-center mb-3">
+              {option.title.includes("Park") ? (
+                <FaCarSide className="text-[#0A66C2]/80 text-3xl" />
+              ) : (
+                <FaHandshake className="text-[#0A66C2]/80 text-3xl" />
+              )}
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-semibold text-center">{option.title}</h3>
+
+            {/* Description */}
+            <ul className="mt-3 text-gray-600 space-y-1 text-center">
+              <li>{option.desc1}</li>
+              <li>{option.desc2}</li>
+              <li>{option.desc3}</li>
+            </ul>
+
+            {/* Price */}
+            <p className="text-2xl font-bold mt-4 text-center text-[#0A66C2]">
+              {option.price}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
