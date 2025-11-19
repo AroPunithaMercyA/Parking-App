@@ -45,7 +45,7 @@ export default function Booking() {
   const fullTo = `${toDate} ${toTime} ${toPeriod}`;
 
   return (
-    <div className="mx-auto px-4 py-6">
+    <div className="mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-6">Book Your Parking</h1>
 
       <FlowSteps step={step} />

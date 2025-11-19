@@ -12,11 +12,10 @@ import Packages from "./pages/packages";
 function App() {
   return (
     <Router>
-      {/* Navbar always */}
-      <Navbar />
-
-      {/* Page Content */}
-      <div className="p-4 min-h-screen">
+      <div className="fixed top-0 left-0 w-full z-50">
+        <Navbar />
+      </div>
+      <div className="pt-20 p-4 min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/booking" element={<Booking />} />
@@ -25,8 +24,6 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-
-      {/* SAME BIG FOOTER ON ALL PAGES */}
       <Footer />
     </Router>
   );
