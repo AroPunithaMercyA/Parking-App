@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Parking-App/static/css/main.566eb4ff.css",
+    "main.js": "/Parking-App/static/js/main.7a3dd38d.js",
+    "static/js/453.891014e9.chunk.js": "/Parking-App/static/js/453.891014e9.chunk.js",
+    "index.html": "/Parking-App/index.html",
+    "main.566eb4ff.css.map": "/Parking-App/static/css/main.566eb4ff.css.map",
+    "main.7a3dd38d.js.map": "/Parking-App/static/js/main.7a3dd38d.js.map",
+    "453.891014e9.chunk.js.map": "/Parking-App/static/js/453.891014e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.566eb4ff.css",
+    "static/js/main.7a3dd38d.js"
+  ]
+}
